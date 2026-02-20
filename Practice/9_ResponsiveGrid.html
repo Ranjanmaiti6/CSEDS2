@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Grid</title>
+    <style>
+        body{
+            background-color: white;
+        }
+        .head{
+            background-color: bisque;
+            padding: 5px;
+        }
+        .head h1{
+            text-align: center;
+            color: blue;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 5px;
+        }
+        @media screen and (min-width: 600px){
+            .container{
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media screen and (min-width: 1024px) {
+            .container{
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+        .box{
+            background-color: aliceblue;
+            border-radius: 8px;
+            padding: 15px;
+        }
+        img{
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="head"><h1>Responsive Product Grid</h1></div>
+    <div class="container">
+        <div class="box">
+            <img src="https://m.media-amazon.com/images/I/71pKJ+Mjd8L._SX679_.jpg" alt="">
+            <h2>Macbook Air M2</h2>
+            <p>Powerful mechine in compact size.</p>
+            <p class="price">₹89,999</p>
+        </div>
+        <div class="box">
+            <img src="https://m.media-amazon.com/images/I/71pKJ+Mjd8L._SX679_.jpg" alt="">
+            <h2>Macbook Air M2</h2>
+            <p>Powerful mechine in compact size.</p>
+            <p class="price">₹89,999</p>
+        </div>
+        <div class="box">
+            <img src="https://m.media-amazon.com/images/I/71pKJ+Mjd8L._SX679_.jpg" alt="">
+            <h2>Macbook Air M2</h2>
+            <p>Powerful mechine in compact size.</p>
+            <p class="price">₹89,999</p>
+        </div>
+        <div class="box">
+            <img src="https://m.media-amazon.com/images/I/71pKJ+Mjd8L._SX679_.jpg" alt="">
+            <h2>Macbook Air M2</h2>
+            <p>Powerful mechine in compact size.</p>
+            <p class="price">₹89,999</p>
+        </div>
+    </div>
+
+</body>
+</html>
